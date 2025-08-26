@@ -2,3 +2,4 @@ plumber
 xgboost
 jsonlite
 stats
+dplyr
