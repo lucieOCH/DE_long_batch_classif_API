@@ -16,8 +16,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Plumber and other required R packages
-RUN R -e "install.packages(c('plumber', 'jsonlite', 'devtools', 'stats', 'dplyr'), repos = 'https://cloud.r-project.org')"
-RUN R -e "devtools::install_version('xgboost', version = '1.7.11.1', repos = 'https://cran.r-project.org')"
+RUN R -e "install.packages(c('plumber', 'jsonlite', 'xgboost', 'stats', 'dplyr'), repos = 'https://cloud.r-project.org')"
 
 # Debug: print installed packages
 RUN R -e "print(installed.packages()[, c('Package', 'Version')])"
