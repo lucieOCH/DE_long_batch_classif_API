@@ -1,3 +1,10 @@
+if (!requireNamespace("devtools", quietly = TRUE)) {
+  install.packages("devtools")
+}
+if (!requireNamespace("xgboost", quietly = TRUE) || packageVersion("xgboost") != "1.7.11.1") {
+  devtools::install_version("xgboost", version = "1.7.11.1", repos = "https://cran.r-project.org")
+}
+
 library(plumber)
 library(xgboost)
 library(dplyr)
