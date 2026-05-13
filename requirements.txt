@@ -1,5 +1,5 @@
 plumber
-devtools
+xgboost
 jsonlite
 stats
 dplyr
