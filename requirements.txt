@@ -1,5 +1,5 @@
 plumber
-xgboost==1.7.11.1
+devtools
 jsonlite
 stats
 dplyr
